@@ -21,8 +21,8 @@
 
 2. 프로젝트 클론:
    ```
-   git clone https://github.com/your-username/terminal-assistant.git
-   cd terminal-assistant
+   git clone https://github.com/flging/terminal_assistant.git
+   cd terminal_assistant
    ```
 
 3. 가상 환경 생성 및 활성화:
