@@ -1,0 +1,536 @@
+[
+    {
+      "description": "현재 폴더의 내용 보기",
+      "command": "ls",
+      "examples": [
+        "ls",
+        "ls -l",
+        "ls Documents"
+      ]
+    },
+    {
+      "description": "폴더 이동하기",
+      "command": "cd",
+      "examples": [
+        "cd Documents",
+        "cd Desktop",
+        "cd .."
+      ]
+    },
+    {
+      "description": "현재 위치 확인하기",
+      "command": "pwd",
+      "examples": [
+        "pwd"
+      ]
+    },
+    {
+      "description": "새 폴더 만들기",
+      "command": "mkdir",
+      "examples": [
+        "mkdir NewFolder",
+        "mkdir \"My Photos\""
+      ]
+    },
+    {
+      "description": "파일 복사하기",
+      "command": "cp",
+      "examples": [
+        "cp file.txt Documents/",
+        "cp -R folder1 folder2"
+      ]
+    },
+    {
+      "description": "파일 이동하기",
+      "command": "mv",
+      "examples": [
+        "mv file.txt Documents/",
+        "mv oldname.txt newname.txt"
+      ]
+    },
+    {
+      "description": "파일 삭제하기",
+      "command": "rm",
+      "examples": [
+        "rm file.txt",
+        "rm -r folder"
+      ]
+    },
+    {
+      "description": "파일 내용 보기",
+      "command": "cat",
+      "examples": [
+        "cat file.txt"
+      ]
+    },
+    {
+      "description": "파일 찾기",
+      "command": "find",
+      "examples": [
+        "find . -name \"*.txt\"",
+        "find ~/Documents -name \"report.docx\""
+      ]
+    },
+    {
+      "description": "파일 내용 검색하기",
+      "command": "grep",
+      "examples": [
+        "grep \"apple\" file.txt",
+        "grep -r \"important\" ~/Documents"
+      ]
+    },
+    {
+      "description": "디스크 사용량 확인하기",
+      "command": "df -h",
+      "examples": [
+        "df -h"
+      ]
+    },
+    {
+      "description": "시스템 정보 보기",
+      "command": "system_profiler SPHardwareDataType",
+      "examples": [
+        "system_profiler SPHardwareDataType"
+      ]
+    },
+    {
+      "description": "배터리 상태 확인하기",
+      "command": "pmset -g batt",
+      "examples": [
+        "pmset -g batt"
+      ]
+    },
+    {
+      "description": "와이파이 켜기",
+      "command": "networksetup -setairportpower en0 on",
+      "examples": [
+        "networksetup -setairportpower en0 on"
+      ]
+    },
+    {
+      "description": "와이파이 끄기",
+      "command": "networksetup -setairportpower en0 off",
+      "examples": [
+        "networksetup -setairportpower en0 off"
+      ]
+    },
+    {
+      "description": "스크린샷 찍기",
+      "command": "screencapture",
+      "examples": [
+        "screencapture screenshot.png",
+        "screencapture -T 5 screenshot.jpg"
+      ]
+    },
+    {
+      "description": "시스템 소리 조절하기 (AppleScript)",
+      "command": "osascript -e 'set volume output volume X'",
+      "examples": [
+        "osascript -e 'set volume output volume 50'",
+        "osascript -e 'set volume output volume 0'"
+      ]
+    },
+    {
+      "description": "알림 센터에 메시지 표시하기 (AppleScript)",
+      "command": "osascript -e 'display notification \"메시지\" with title \"제목\"'",
+      "examples": [
+        "osascript -e 'display notification \"작업이 완료되었습니다\" with title \"알림\"'"
+      ]
+    },
+    {
+      "description": "대화 상자 표시하기 (AppleScript)",
+      "command": "osascript -e 'display dialog \"메시지\" buttons {\"OK\", \"취소\"} default button \"OK\"'",
+      "examples": [
+        "osascript -e 'display dialog \"계속하시겠습니까?\" buttons {\"OK\", \"취소\"} default button \"OK\"'"
+      ]
+    },
+    {
+      "description": "현재 실행 중인 앱 목록 보기 (AppleScript)",
+      "command": "osascript -e 'tell application \"System Events\" to get name of every process whose background only is false'",
+      "examples": [
+        "osascript -e 'tell application \"System Events\" to get name of every process whose background only is false'"
+      ]
+    },
+    {
+      "description": "특정 앱 실행하기 (AppleScript)",
+      "command": "osascript -e 'tell application \"앱 이름\" to activate'",
+      "examples": [
+        "osascript -e 'tell application \"Safari\" to activate'"
+      ]
+    },
+    {
+      "description": "화면 밝기 조절하기 (AppleScript)",
+      "command": "osascript -e 'tell application \"System Events\"' -e 'key code 144' -e 'end tell'",
+      "examples": [
+        "osascript -e 'tell application \"System Events\"' -e 'key code 144' -e 'end tell'",
+        "osascript -e 'tell application \"System Events\"' -e 'key code 145' -e 'end tell'"
+      ]
+    },
+    {
+      "description": "맥북 잠자기 모드로 전환 (AppleScript)",
+      "command": "osascript -e 'tell application \"System Events\" to sleep'",
+      "examples": [
+        "osascript -e 'tell application \"System Events\" to sleep'"
+      ]
+    },
+    {
+      "description": "현재 날짜와 시간 보기",
+      "command": "date",
+      "examples": [
+        "date"
+      ]
+    },
+    {
+      "description": "캘린더 보기",
+      "command": "cal",
+      "examples": [
+        "cal",
+        "cal 2023"
+      ]
+    },
+    {
+      "description": "간단한 계산기 사용하기",
+      "command": "bc",
+      "examples": [
+        "echo \"5 + 3\" | bc",
+        "echo \"scale=2; 10 / 3\" | bc"
+      ]
+    },
+    {
+      "description": "파일 압축하기",
+      "command": "zip",
+      "examples": [
+        "zip archive.zip file1.txt file2.txt",
+        "zip -r archive.zip folder"
+      ]
+    },
+    {
+      "description": "파일 압축 풀기",
+      "command": "unzip",
+      "examples": [
+        "unzip archive.zip",
+        "unzip archive.zip -d destination_folder"
+      ]
+    },
+    {
+      "description": "인터넷 연결 테스트",
+      "command": "ping",
+      "examples": [
+        "ping www.google.com",
+        "ping -c 4 www.example.com"
+      ]
+    },
+    {
+      "description": "파일 미리보기 (QuickLook)",
+      "command": "qlmanage -p",
+      "examples": [
+        "qlmanage -p file.pdf",
+        "qlmanage -p image.jpg"
+      ]
+    },
+    {
+      "description": "시스템 다시 시작 (관리자 권한 필요)",
+      "command": "sudo shutdown -r now",
+      "examples": [
+        "sudo shutdown -r now"
+      ]
+    },
+    {
+      "description": "시스템 종료 (관리자 권한 필요)",
+      "command": "sudo shutdown -h now",
+      "examples": [
+        "sudo shutdown -h now"
+      ]
+    },
+    {
+        "description": "파일 또는 폴더 이름 변경하기",
+        "command": "mv",
+        "examples": [
+        "mv oldname.txt newname.txt",
+        "mv oldfolder newfolder"
+        ]
+    },
+    {
+        "description": "파일이나 폴더 권한 변경하기",
+        "command": "chmod",
+        "examples": [
+        "chmod 644 file.txt",
+        "chmod -R 755 folder"
+        ]
+    },
+    {
+        "description": "현재 네트워크 연결 정보 보기",
+        "command": "ifconfig",
+        "examples": [
+        "ifconfig | grep inet"
+        ]
+    },
+    {
+        "description": "도메인 이름으로 IP 주소 찾기",
+        "command": "nslookup",
+        "examples": [
+        "nslookup www.example.com"
+        ]
+    },
+    {
+        "description": "파일 내용 페이지 단위로 보기",
+        "command": "less",
+        "examples": [
+        "less longfile.txt"
+        ]
+    },
+    {
+        "description": "파일의 처음 몇 줄 보기",
+        "command": "head",
+        "examples": [
+        "head -n 10 file.txt"
+        ]
+    },
+    {
+        "description": "파일의 마지막 몇 줄 보기",
+        "command": "tail",
+        "examples": [
+        "tail -n 10 file.txt"
+        ]
+    },
+    {
+        "description": "프로세스 목록 보기",
+        "command": "ps aux",
+        "examples": [
+        "ps aux",
+        "ps aux | grep Chrome"
+        ]
+    },
+    {
+        "description": "특정 프로세스 종료하기",
+        "command": "kill",
+        "examples": [
+        "kill -9 1234"
+        ]
+    },
+    {
+        "description": "시스템 메모리 사용량 보기",
+        "command": "top -l 1 | head -n 10",
+        "examples": [
+        "top -l 1 | head -n 10"
+        ]
+    },
+    {
+        "description": "특정 폴더의 크기 확인하기",
+        "command": "du -sh",
+        "examples": [
+        "du -sh ~/Documents"
+        ]
+    },
+    {
+        "description": "파일 내용 정렬하기",
+        "command": "sort",
+        "examples": [
+        "sort file.txt",
+        "sort -r file.txt"
+        ]
+    },
+    {
+        "description": "중복된 줄 제거하기",
+        "command": "uniq",
+        "examples": [
+        "sort file.txt | uniq"
+        ]
+    },
+    {
+        "description": "파일 또는 폴더 압축하기 (tar)",
+        "command": "tar -czvf",
+        "examples": [
+        "tar -czvf archive.tar.gz folder/"
+        ]
+    },
+    {
+        "description": "tar 압축 풀기",
+        "command": "tar -xzvf",
+        "examples": [
+        "tar -xzvf archive.tar.gz"
+        ]
+    },
+    {
+        "description": "특정 앱 강제 종료하기 (AppleScript)",
+        "command": "osascript -e 'tell application \"앱 이름\" to quit'",
+        "examples": [
+        "osascript -e 'tell application \"Safari\" to quit'"
+        ]
+    },
+    {
+        "description": "화면 보호기 실행하기",
+        "command": "open -a ScreenSaverEngine",
+        "examples": [
+        "open -a ScreenSaverEngine"
+        ]
+    },
+    {
+        "description": "휴지통 비우기 (AppleScript)",
+        "command": "osascript -e 'tell application \"Finder\" to empty trash'",
+        "examples": [
+        "osascript -e 'tell application \"Finder\" to empty trash'"
+        ]
+    },
+    {
+        "description": "현재 재생 중인 iTunes 노래 정보 보기 (AppleScript)",
+        "command": "osascript -e 'tell application \"Music\" to get {name, artist, album} of current track'",
+        "examples": [
+        "osascript -e 'tell application \"Music\" to get {name, artist, album} of current track'"
+        ]
+    },
+    {
+        "description": "특정 웹사이트 열기",
+        "command": "open",
+        "examples": [
+        "open https://www.example.com"
+        ]
+    },
+    {
+        "description": "시스템 언어 설정 보기",
+        "command": "defaults read -g AppleLanguages",
+        "examples": [
+        "defaults read -g AppleLanguages"
+        ]
+    },
+    {
+        "description": "숨김 파일 표시하기",
+        "command": "defaults write com.apple.finder AppleShowAllFiles YES",
+        "examples": [
+        "defaults write com.apple.finder AppleShowAllFiles YES; killall Finder"
+        ]
+    },
+    {
+        "description": "숨김 파일 숨기기",
+        "command": "defaults write com.apple.finder AppleShowAllFiles NO",
+        "examples": [
+        "defaults write com.apple.finder AppleShowAllFiles NO; killall Finder"
+        ]
+    },
+    {
+        "description": "Dock 자동 숨김 설정하기",
+        "command": "defaults write com.apple.dock autohide -bool true",
+        "examples": [
+        "defaults write com.apple.dock autohide -bool true; killall Dock"
+        ]
+    },
+    {
+        "description": "스크린샷 저장 위치 변경하기",
+        "command": "defaults write com.apple.screencapture location",
+        "examples": [
+        "defaults write com.apple.screencapture location ~/Desktop/Screenshots; killall SystemUIServer"
+        ]
+    },
+    {
+        "description": "현재 Wi-Fi 네트워크 비밀번호 보기 (관리자 권한 필요)",
+        "command": "security find-generic-password -wa",
+        "examples": [
+        "security find-generic-password -wa \"Wi-Fi 네트워크 이름\""
+        ]
+    },
+    {
+        "description": "시스템 업데이트 확인하기",
+        "command": "softwareupdate --list",
+        "examples": [
+        "softwareupdate --list"
+        ]
+    },
+    {
+        "description": "특정 파일 형식의 모든 파일 찾기",
+        "command": "find",
+        "examples": [
+        "find ~/Documents -name \"*.pdf\""
+        ]
+    },
+    {
+        "description": "파일 내용 단어 수 세기",
+        "command": "wc",
+        "examples": [
+        "wc -w file.txt"
+        ]
+    },
+    {
+        "description": "현재 날짜와 시간 말하기",
+        "command": "osascript -e 'say (current date)'",
+        "examples": [
+          "osascript -e 'say (current date)'"
+        ]
+      },
+      {
+        "description": "특정 메시지 말하기",
+        "command": "osascript -e 'say \"Hello, how are you?\" using \"Alex\"'",
+        "examples": [
+          "osascript -e 'say \"안녕하세요, 오늘 기분은 어떠신가요?\" using \"Yuna\"'"
+        ]
+      },
+      {
+        "description": "새 메모 작성하기",
+        "command": "osascript -e 'tell application \"Notes\" to make new note with properties {body:\"메모 내용\"}'",
+        "examples": [
+          "osascript -e 'tell application \"Notes\" to make new note with properties {body:\"우유 사기\"}'"
+        ]
+      },
+      {
+        "description": "새 미리알림 추가하기",
+        "command": "osascript -e 'tell application \"Reminders\" to make new reminder with properties {name:\"할 일\", due date:date \"2023-12-31\"}'",
+        "examples": [
+          "osascript -e 'tell application \"Reminders\" to make new reminder with properties {name:\"책 반납하기\", due date:date \"2023-06-30\"}'"
+        ]
+      },
+      {
+        "description": "음악 재생/일시정지 토글",
+        "command": "osascript -e 'tell application \"Music\" to playpause'",
+        "examples": [
+          "osascript -e 'tell application \"Music\" to playpause'"
+        ]
+      },
+      {
+        "description": "다음 곡으로 넘어가기",
+        "command": "osascript -e 'tell application \"Music\" to next track'",
+        "examples": [
+          "osascript -e 'tell application \"Music\" to next track'"
+        ]
+      },
+      {
+        "description": "이메일 보내기",
+        "command": "osascript -e 'tell application \"Mail\" to make new outgoing message with properties {subject:\"제목\", content:\"내용\", visible:true}' -e 'tell result to make new to recipient with properties {address:\"받는사람@example.com\"}' -e 'tell result to send'",
+        "examples": [
+          "osascript -e 'tell application \"Mail\" to make new outgoing message with properties {subject:\"안녕하세요\", content:\"이것은 테스트 메일입니다.\", visible:true}' -e 'tell result to make new to recipient with properties {address:\"friend@example.com\"}' -e 'tell result to send'"
+        ]
+      },
+      {
+        "description": "Finder에서 새 폴더 만들기",
+        "command": "osascript -e 'tell application \"Finder\" to make new folder at desktop'",
+        "examples": [
+          "osascript -e 'tell application \"Finder\" to make new folder at desktop'"
+        ]
+      },
+      {
+        "description": "스크린샷 찍기",
+        "command": "osascript -e 'tell application \"Screenshot\" to activate' -e 'tell application \"System Events\" to keystroke \"4\" using command down'",
+        "examples": [
+          "osascript -e 'tell application \"Screenshot\" to activate' -e 'tell application \"System Events\" to keystroke \"4\" using command down'"
+        ]
+      },
+      {
+        "description": "현재 날씨 정보 가져오기 (인터넷 연결 필요)",
+        "command": "osascript -e 'set weatherURL to \"http://wttr.in/?format=%l:+%c+%t\"' -e 'set weatherInfo to do shell script \"curl -s '\" & weatherURL & \"'\"' -e 'return weatherInfo'",
+        "examples": [
+          "osascript -e 'set weatherURL to \"http://wttr.in/?format=%l:+%c+%t\"' -e 'set weatherInfo to do shell script \"curl -s '\" & weatherURL & \"'\"' -e 'return weatherInfo'"
+        ]
+      },
+      {
+        "description": "시스템 정보 대화상자로 표시하기",
+        "command": "osascript -e 'set systemInfo to do shell script \"system_profiler SPHardwareDataType | awk -F\": \" '/Hardware Overview/,/}/'\"' -e 'display dialog systemInfo'",
+        "examples": [
+          "osascript -e 'set systemInfo to do shell script \"system_profiler SPHardwareDataType | awk -F\": \" '/Hardware Overview/,/}/'\"' -e 'display dialog systemInfo'"
+        ]
+      },
+      {
+        "description": "Wi-Fi 켜기/끄기",
+        "command": "osascript -e 'tell application \"System Events\" to tell process \"SystemUIServer\" to tell (menu bar item 1 of menu bar 1 whose description contains \"Wi-Fi\") to click' -e 'tell application \"System Events\" to tell process \"SystemUIServer\" to tell (menu item \"Wi-Fi\" of menu 1 of (menu bar item 1 of menu bar 1 whose description contains \"Wi-Fi\")) to click'",
+        "examples": [
+          "osascript -e 'tell application \"System Events\" to tell process \"SystemUIServer\" to tell (menu bar item 1 of menu bar 1 whose description contains \"Wi-Fi\") to click' -e 'tell application \"System Events\" to tell process \"SystemUIServer\" to tell (menu item \"Wi-Fi\" of menu 1 of (menu bar item 1 of menu bar 1 whose description contains \"Wi-Fi\")) to click'"
+        ]
+      }
+  ]
